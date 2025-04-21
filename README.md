@@ -267,7 +267,5 @@ By the end of this course, participants will be able to:
 <p>Developed with ❤️ for the UTSW Community | 2025</p>
 </div>
 
---
-
 
 
