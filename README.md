@@ -2,9 +2,15 @@
 
 <img src="roboTeacher.png" alt="Robot Teacher" width="200" align="right"/>
 
-[![Institution: UTSW](https://img.shields.io/badge/Institution-UTSW-blue)](https://www.utsouthwestern.edu/)
-[![Course Type: Nanocourse](https://img.shields.io/badge/Course_Type-Nanocourse-green)](https://www.nanocourses.net/spring-2025/#llm)
-[![Date: April 2025](https://img.shields.io/badge/Date-April_2025-orange)](https://www.nanocourses.net/spring-2025/#llm)
+<a href="https://www.utsouthwestern.edu/" target="_blank">
+  <img src="https://img.shields.io/badge/Institution-UTSW-blue" alt="Institution: UTSW">
+</a>
+<a href="https://www.nanocourses.net/spring-2025/#llm" target="_blank">
+  <img src="https://img.shields.io/badge/Course_Type-Nanocourse-green" alt="Course Type: Nanocourse">
+</a>
+<a href="https://www.nanocourses.net/spring-2025/#llm" target="_blank">
+  <img src="https://img.shields.io/badge/Date-April_2025-orange" alt="Date: April 2025">
+</a>
 
 
 ## 📑 Table of Contents
@@ -15,23 +21,23 @@
 - [Instructional Guidance](#additional-preparation-and-instructional-guidance)
 - [Git Submodules](#git-submodules)
 
-## Resources related to the [April 2025 nanocourse](https://www.nanocourses.net/spring-2025/#llm) for [***students***].
+## Resources related to the <a href="https://www.nanocourses.net/spring-2025/#llm" target="_blank">April 2025 nanocourse</a> for [***students***].
 
 * In this repo, students can find course lectures, labs/exercises, and other resources. Each section has a subdirectory. 
 * This github repo will primarily provide access to markdown-code-based exercise/demo worksheets for ease of use. 
 
 * Additional materials will also be provided via the course MS Teams page.  
-  * 🔗 [**Teams Page**](https://teams.microsoft.com/l/team/19%3ALXnf-FPZBMkaGE-Y02pJIZNq1hyi3Mgx67ujYoa9VEU1%40thread.tacv2/conversations?groupId=1df73c73-32d5-4021-957c-57cdc33f079a&tenantId=9d418695-71ac-4c31-b5b2-c196c8ec3c8a)
+  * 🔗 <a href="https://teams.microsoft.com/l/team/19%3ALXnf-FPZBMkaGE-Y02pJIZNq1hyi3Mgx67ujYoa9VEU1%40thread.tacv2/conversations?groupId=1df73c73-32d5-4021-957c-57cdc33f079a&tenantId=9d418695-71ac-4c31-b5b2-c196c8ec3c8a" target="_blank">**Teams Page**</a>
   * Class Files/documents will be shared to the Teams page when ready for sharing. 
   * Lecture section folder been added in the "Files" tab `General > Files`
-      * 📁 [**Link to folder**](https://365utsouthwestern.sharepoint.com/:f:/r/sites/LLMsinActionAPracticalIntroduction-Nanocourse2025/Shared%20Documents/General?csf=1&web=1&e=oSR5qy) 
+      * 📁 <a href="https://365utsouthwestern.sharepoint.com/:f:/r/sites/LLMsinActionAPracticalIntroduction-Nanocourse2025/Shared%20Documents/General?csf=1&web=1&e=oSR5qy" target="_blank">**Link to folder**</a> 
 
 
 ## Syllabi & Materials 📚
   
 
 - Syllabus for document (in the class Teams channel)
-  - 📄 [**Shared Teams Syllabus**](https://365utsouthwestern.sharepoint.com/:w:/r/sites/LLMsinActionAPracticalIntroduction-Nanocourse2025/Shared%20Documents/General/Syllabus_LLMs_In_Action_Nano2025_share.docx?d=w72bc983678d549909eee4ae19a06e9c4&csf=1&web=1&e=cK4mxN)
+  - 📄 <a href="https://365utsouthwestern.sharepoint.com/:w:/r/sites/LLMsinActionAPracticalIntroduction-Nanocourse2025/Shared%20Documents/General/Syllabus_LLMs_In_Action_Nano2025_share.docx?d=w72bc983678d549909eee4ae19a06e9c4&csf=1&web=1&e=cK4mxN" target="_blank">**Shared Teams Syllabus**</a>
 
 
 A snapshot is provided below:
