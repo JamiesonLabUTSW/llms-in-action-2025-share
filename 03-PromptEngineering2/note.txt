@@ -1,0 +1,45 @@
+**Patient:** John Smith **MRN:** 789123 **DOB:** 1967-08-22
+**Date of Encounter:** 2025-04-14 **Attending:** Dr. E. Codd
+
+**Subjective / HPI:**
+58 y/o male presents w/ intermittent chest discomfort x 3 days. Substernal "pressure", non-radiating. Lasts 5-10 mins, 1-2x/day. Sometimes w/ exertion (stairs), once watching TV. Rates 4/10. Partial relief w/ rest. Mild SOB during episodes. No diaphoresis, palpitations, N/V. Denies F/C/cough. Good med compliance. Pt is current smoker, 1 PPD x 30 yrs, counseled. Occasional ETOH. Denies drugs. FHx: Father MI @ 62. Mother HTN.
+
+**PMH:**
+- HTN (10 yrs)
+- HLD
+- GERD (5 yrs, uses OTC Tums prn). Last stress test 4 yrs ago was neg (rec requested).
+
+**Meds:**
+- Lisinopril 20mg qd
+- Atorvastatin 40mg qhs
+- Calcium Carb PRN
+
+**Allergies:** PCN (rash)
+
+**ROS:**
+- Constitutional: (-), no weight loss.
+- CV: See HPI. (-) orthopnea, PND, edema.
+- Resp: Mild SOB w/ CP per HPI. (-) cough/wheeze.
+- GI: (-) N/V/D/abd pain. Occasional heartburn.
+- MSK: (-) chest wall tenderness.
+
+**Objective/Exam:**
+- Vitals: BP 148/88 (L arm, seated), HR 76 reg, RR 16, T 37.1, O2 98% RA.
+- Gen: A&Ox3, NAD.
+- HEENT: PERRLA, EOMI. MM moist.
+- Neck: Supple, no JVD/bruits.
+- Lungs: CTAB.
+- Cor: RRR, S1/S2 nl. No M/R/G. Pulses 2+ sym.
+- Abd: SNTD, BS+. 
+- Ext: No CCE.
+
+**Assessment/Plan:**
+58 male w/ risks (HTN, HLD, smoker, FHx CAD) & new intermittent chest pressure/SOB. ?Angina vs GERD vs MSK vs Anxiety. Main concern is ACS. 
+Plan: 
+1. Workup: STAT EKG, Serial Trops x2, CKMB, BMP, CBC, Lipids, CXR.
+2. Meds: ASA 325mg PO x1 now. Hold BBs. Continue home meds.
+3. Consults: Cardiology prn results.
+4. Pt Ed: Discussed risks, need for eval, s/s to return/call 911, smoking cessation++.
+5. F/u: 1 wk or sooner.
+
+---/s/ Dr. E. Codd electronically signed 2025-04-14 17:15 CDT---
