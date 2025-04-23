@@ -266,7 +266,7 @@ Calculate the 10-year ASCVD risk for a 55-year-old White male, current smoker, t
 
 ### Calculation
 
-When prompted by the UI, enter the value "0.0469" to simulate the response of the called function.
+When prompted by the UI, enter the value "14.1" to simulate the response of the called function.
 
 ### Observations
 
