@@ -29,6 +29,7 @@ You will be provided with a patient's clinical data and a query that asks for a 
 * Your responses should be clinically accurate.
 * Your responses should include the calculation logic and the result.
 * Your responses should be mathematically correct.
+* If you do not have all of the necessary information, you should immediately request missing elements from the user.
 
 ## Response Format
 Any calculations or you perform should be presented first but enclosed within <calculation></calculation> tags.
@@ -89,6 +90,7 @@ You have access to a structured JSON API that performs the calculation if provid
 * Assume that your response will be parsed and the API will be called with the provided data.
 * Your responses should follow the schema exactly.
 * Your responses should be accurate and grounded in the clinical data provided.
+* If you do not have all of the necessary information, you should immediately request missing elements from the user.
 ```
 
 ### User Query
@@ -246,12 +248,8 @@ You have access to a set of calculators that perform the risk calculations if pr
 * Your responses should be factually correct and rely on the appropriate calculator.
 * Your response should include the calculator used and the result.
 * Ensure that the response is clear and easy to understand.
-
-## Guidelines
-* Your responses should be factually correct and rely on the appropriate calculator.
-* Your response should include the calculator used and the result.
-* Ensure that the response is clear and easy to understand.
 * Do not interpolate between the calculator and the result.
+* If you do not have all of the necessary information, you should immediately request missing elements from the user.
 
 ## Response Format
 You will respond only with one sentence as follows:
@@ -335,6 +333,7 @@ When given patient data and a description of a calculation, you must:
 * Responses must include commented Python code demonstrating exactly how the calculation was performed.
 * After execution, state clearly the calculated result
 * Your responses should be factually correct and based on the calculations.
+* If you do not have all of the necessary information, you should immediately request missing elements from the user.
 
 ## Response Format
 
