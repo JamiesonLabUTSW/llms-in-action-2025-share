@@ -5,11 +5,14 @@
 <a href="https://www.utsouthwestern.edu/" target="_blank">
   <img src="https://img.shields.io/badge/Institution-UTSW-blue" alt="Institution: UTSW">
 </a>
-<a href="https://www.nanocourses.net/spring-2025/#llm" target="_blank">
+<a href="https://www.nanocourses.net/" target="_blank">
   <img src="https://img.shields.io/badge/Course_Type-Nanocourse-green" alt="Course Type: Nanocourse">
 </a>
-<a href="https://www.nanocourses.net/spring-2025/#llm" target="_blank">
-  <img src="https://img.shields.io/badge/Date-April_2025-orange" alt="Date: April 2025">
+<a href="https://www.nanocourses.net/" target="_blank">
+  <img src="https://img.shields.io/badge/Date-October_2025-orange" alt="Date: October 2025">
+</a>
+<a href="https://github.com/JamiesonLabUTSW/llms-in-action-2025-share/releases/tag/spring2025" target="_blank">
+  <img src="https://img.shields.io/badge/Spring_2025-Tagged-green" alt="Spring 2025 Tag">
 </a>
 
 
@@ -21,24 +24,28 @@
 - [Instructional Guidance](#additional-preparation-and-instructional-guidance)
 - [Git Submodules](#git-submodules)
 
-## Resources related to the <a href="https://www.nanocourses.net/spring-2025/#llm" target="_blank">April 2025 nanocourse</a> for [***students***].
+## Resources related to the **October 2025 nanocourse** for [***students***].
 
-* In this repo, students can find course lectures, labs/exercises, and other resources. Each section has a subdirectory. 
-* This github repo will primarily provide access to markdown-code-based exercise/demo worksheets for ease of use. 
+> **Note:** The Spring 2025 (April) version of this course has been tagged as `spring2025` for reference.
 
-* Additional materials will also be provided via the course MS Teams page.  
-  * 🔗 <a href="https://teams.microsoft.com/l/team/19%3ALXnf-FPZBMkaGE-Y02pJIZNq1hyi3Mgx67ujYoa9VEU1%40thread.tacv2/conversations?groupId=1df73c73-32d5-4021-957c-57cdc33f079a&tenantId=9d418695-71ac-4c31-b5b2-c196c8ec3c8a" target="_blank">**Teams Page**</a>
-  * Class Files/documents will be shared to the Teams page when ready for sharing. 
-  * Lecture section folder been added in the "Files" tab `General > Files`
-      * 📁 <a href="https://365utsouthwestern.sharepoint.com/:f:/r/sites/LLMsinActionAPracticalIntroduction-Nanocourse2025/Shared%20Documents/General?csf=1&web=1&e=oSR5qy" target="_blank">**Link to folder**</a> 
-  * ❓ Use the [**Questions Channel**](https://teams.microsoft.com/l/channel/19%3A9cf5781ce22b45d4a3fc2bbceb009684%40thread.tacv2/Questions?groupId=1df73c73-32d5-4021-957c-57cdc33f079a&tenantId=9d418695-71ac-4c31-b5b2-c196c8ec3c8a) to ask instructors anything!
+* In this repo, students can find course lectures, labs/exercises, and other resources. Each section has a subdirectory.
+* This github repo will primarily provide access to markdown-code-based exercise/demo worksheets for ease of use.
+
+* Additional materials will also be provided via the course MS Teams page.
+  * 🔗 Teams page will be created closer to the course date
+  * Class Files/documents will be shared to the Teams page when ready for sharing.
 
 
 ## Syllabi & Materials 📚
-  
 
-- Syllabus for document (in the class Teams channel)
-  - 📄 <a href="https://365utsouthwestern.sharepoint.com/:w:/r/sites/LLMsinActionAPracticalIntroduction-Nanocourse2025/Shared%20Documents/General/Syllabus_LLMs_In_Action_Nano2025_share.docx?d=w72bc983678d549909eee4ae19a06e9c4&csf=1&web=1&e=cK4mxN" target="_blank">**Shared Teams Syllabus**</a>
+### October 2025 Course Materials
+
+- Syllabus will be shared via Teams closer to the course date
+
+### Spring 2025 Course Materials (Historical Reference)
+
+- Syllabus from Spring 2025 course:
+  - 📄 <a href="https://365utsouthwestern.sharepoint.com/:w:/r/sites/LLMsinActionAPracticalIntroduction-Nanocourse2025/Shared%20Documents/General/Syllabus_LLMs_In_Action_Nano2025_share.docx?d=w72bc983678d549909eee4ae19a06e9c4&csf=1&web=1&e=cK4mxN" target="_blank">**Spring 2025 Shared Syllabus**</a>
 
 
 A snapshot is provided below:
@@ -48,7 +55,7 @@ A snapshot is provided below:
 ### Course Overview
 
 - **Title:** LLMs in Action: A Practical Introduction
-- **Dates:** April 22-23, 2025 (Tuesday-Wednesday)
+- **Dates:** October 27-28, 2025 (Monday-Tuesday)
 - **Time:** 9:00 AM - 5:00 PM both days
 - **Location:** G9.102
 - **Instructors:**
@@ -56,8 +63,8 @@ A snapshot is provided below:
   - Michael Holcomb, MS
   - David Hein, MS
   - Ameer Shakur, PhD
-  - Shinyoung Kang, MS (TA)
-  - Hunter Schuler, MS (TA)
+  - Shinyoung Kang, MS
+  - Tra Ngo, PhD (TA)
 
 ---
 
@@ -98,7 +105,7 @@ By the end of this course, participants will be able to:
 ---
 
 ## Day 1: Foundations, Prompting, and Healthcare Applications
-- Hunter Schuler, MS (TA)
+
 ### Morning Session (9:00 AM - 12:00 PM)
 
 - **9:00 AM - 9:30 AM: Welcome & Introduction [Andrew + All]**
@@ -116,7 +123,7 @@ By the end of this course, participants will be able to:
 - **10:30 AM - 10:45 AM: Break**
 
 - **10:45 AM - 11:15 AM: Hands-On Lab 1 – Getting Started with LLMs - "Hello World" [Andrew]**
-  - Tour of top consumer-grade platforms (ChatGPT, Claude, Grok, Google AI Studio).
+  - Tour of top consumer-grade platforms (ChatGPT, Claude, Grok, Google AI Studio, Copilot).
   - Account setup and basic interface orientation.
   - First prompts and observations of variability.
   - Introduction to Google AI Studio as primary course platform.
@@ -172,7 +179,6 @@ By the end of this course, participants will be able to:
 ---
 
 ## Day 2: Structured Data, Advanced Capabilities, and Applications
-- Shinyoung Kang, MS (TA)
 
 ### Morning Session (9:00 AM - 12:00 PM)
 
@@ -196,15 +202,16 @@ By the end of this course, participants will be able to:
 
 - **10:45 AM - 11:00 AM: Break**
 
-- **11:00 AM - 11:30 AM: Lecture – RAG with LLMs [Mike]**
-  - Introduction to Retrieval-Augmented Generation (RAG).
-  - Bayesian formulation.
-  - Challenges/Limitations.
+- **11:00 AM - 11:30 AM: Lecture – Multimodal LLMs [Ameer]**
+  - Introduction to multimodal capabilities (text + image, audio, video).
+  - Visual reasoning and understanding.
+  - Voice interaction and audio analysis.
+  - Medical imaging applications.
+  - Limitations and verification needs.
+  - Demonstrations with biomedical examples.
 
-- **11:30 AM - 12:00 PM: Lab – RAG with LLMs: Patient Education Materials [Mike]**
-  - Vanilla generation.
-  - Manual context injection.
-  - Grounding with web search.
+- **11:30 AM - 12:00 PM: Lab – Multimodal [Shin]**
+  - Neurological examination video analysis demonstrations.
 
 ### Lunch Break (12:00 PM - 1:00 PM)
 
@@ -220,13 +227,15 @@ By the end of this course, participants will be able to:
   - Function calling (structured output vs native function calling).
   - Code execution.
 
-- **2:15 PM - 3:15 PM: Lecture – Multimodal LLMs [Ameer]**
-  - Introduction to multimodal capabilities (text + image, audio, video).
-  - Visual reasoning and understanding.
-  - Voice interaction and audio analysis.
-  - Medical imaging applications.
-  - Limitations and verification needs.
-  - Demonstrations with biomedical examples.
+- **2:15 PM - 3:15 PM: Lecture – RAG with LLMs [Mike]**
+  - Introduction to Retrieval-Augmented Generation (RAG).
+  - Bayesian formulation.
+  - Challenges/Limitations.
+
+  **Lab – RAG with LLMs: Patient Education Materials [Mike]**
+  - Vanilla generation.
+  - Manual context injection.
+  - Grounding with web search.
 
 - **3:15 PM - 3:30 PM: Break**
 
