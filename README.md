@@ -31,6 +31,7 @@
   * Class Files/documents will be shared to the Teams page when ready for sharing. 
   * Lecture section folder been added in the "Files" tab `General > Files`
       * 📁 <a href="https://365utsouthwestern.sharepoint.com/:f:/r/sites/LLMsinActionAPracticalIntroduction-Nanocourse2025/Shared%20Documents/General?csf=1&web=1&e=oSR5qy" target="_blank">**Link to folder**</a> 
+  * ❓ Use the [**Questions Channel**](https://teams.microsoft.com/l/channel/19%3A9cf5781ce22b45d4a3fc2bbceb009684%40thread.tacv2/Questions?groupId=1df73c73-32d5-4021-957c-57cdc33f079a&tenantId=9d418695-71ac-4c31-b5b2-c196c8ec3c8a) to ask instructors anything!
 
 
 ## Syllabi & Materials 📚
