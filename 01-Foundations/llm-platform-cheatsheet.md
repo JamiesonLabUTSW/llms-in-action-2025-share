@@ -181,6 +181,11 @@ This guide provides a high-level overview of the different LLM platforms you'll 
   - **Grounded Responses**: The AI answers questions based *only* on the sources you provide, reducing hallucinations.
   - **Automatic Summaries & Citations**: Generates summaries and points directly to the source location in your documents.
   - **Video Overviews & Mind Maps**: Can automatically create narrated video slideshows or interactive mind maps from your source documents to help visualize and understand complex topics.
+- **Cost**: **Free** (with Google account) - Up to 50 sources per notebook, 500,000 words per source
+- **Things to Note**:
+  - **Healthcare Warning**: Not HIPAA compliant. Do not upload patient data or confidential medical records.
+  - Excellent for literature reviews and research synthesis.
+  - Audio overviews are particularly helpful for learning complex topics.
 - **Link**: [notebooklm.google.com](https://notebooklm.google.com/)
 
 ---
@@ -192,6 +197,10 @@ This guide provides a high-level overview of the different LLM platforms you'll 
     - **Automation**: Offload complex engineering tasks like writing tests, refactoring code, or debugging.
     - **Native VS Code Extension**: Offers a graphical experience directly within the VS Code editor.
     - **Checkpoints**: Automatically saves the code state before each change, allowing you to instantly rewind mistakes.
+- **Cost**: Requires Claude Pro subscription ($20/month) or API keys with usage-based pricing
+- **Things to Note**:
+    - **Healthcare Warning**: Not for clinical use. Development tool only.
+    - Powerful for coding tasks but requires command-line familiarity.
 - **Link**: [claude.ai/code](https://claude.ai/code)
 
 **Gemini CLI**
@@ -200,4 +209,8 @@ This guide provides a high-level overview of the different LLM platforms you'll 
     - **Interactive Shell**: Allows you to run commands like `vim` or `git` directly inside the AI session.
     - **Gemini CLI Extensions**: An open-source framework that lets the AI interact with external tools like databases, CI/CD systems, and APIs.
     - **Scripting & Automation**: Easily integrate Gemini into your shell scripts and development workflows.
+- **Cost**: Free to use (uses your Google AI Studio API key with same generous free tier)
+- **Things to Note**:
+    - **Healthcare Warning**: Not for patient data. Development use only.
+    - Requires API key setup and command-line knowledge.
 - **Link**: [github.com/google/gemini-cli](https://github.com/google/gemini-cli)
