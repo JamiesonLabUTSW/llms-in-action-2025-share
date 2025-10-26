@@ -8,13 +8,13 @@ This guide provides a high-level overview of the different LLM platforms you'll 
 
 | Platform | Best For | Free Tier | Paid Tier | Healthcare/PHI Safe? | Key Limitation |
 |----------|----------|-----------|-----------|---------------------|----------------|
-| **ChatGPT** | General use, data analysis | Limited GPT-4o mini | $20/mo (Plus), $30/mo (Team) | ❌ No (unless Enterprise) | Message caps even on paid |
-| **Claude** | Long documents, writing | Very limited (few msgs/day) | $20/mo (Pro) | ❌ No (unless Enterprise) | Strict message limits |
-| **Google AI Studio** | Development, full control | Generous (15 RPM) | Pay-as-you-go API | ❌ No (check enterprise) | More technical interface |
-| **Microsoft Copilot** | Microsoft 365 integration | Basic chat access | $30/mo (Pro) | ⚠️ Depends on org plan | Requires Microsoft ecosystem |
-| **Grok** | Real-time X data | None | $8-16/mo (X Premium) | ❌ No | Requires X subscription |
+| **ChatGPT** | General use, data analysis | GPT-5 (limited msgs) | $20-30/mo+ | ❌ No (unless Enterprise) | Message caps even on paid |
+| **Claude** | Long documents, writing | Very limited (time-based) | $20/mo+ | ❌ No (unless Enterprise) | Strict message limits |
+| **Google AI Studio** | Development, learning | Very generous free tier | Pay-as-you-go API | ❌ No (use Vertex AI) | More technical interface |
+| **Microsoft Copilot** | Microsoft 365 integration | Basic chat access | $20-30/mo | ⚠️ Yes (M365 Enterprise) | Requires Microsoft ecosystem |
+| **Grok** | Real-time X data | None | $8/mo+ (X Premium) | ❌ No | Requires X subscription |
 | **LM Studio** | Privacy, local control | Completely free | N/A (local) | ✅ Yes (all local) | Requires powerful hardware |
-| **NotebookLM** | Document analysis | Free (with limits) | N/A | ❌ No (Google service) | Limited to provided sources |
+| **NotebookLM** | Document analysis, research | Free (with limits) | N/A | ❌ No (Google service) | Limited to provided sources |
 
 **⚠️ Healthcare Data Warning**: Never input patient data, PHI, or sensitive medical information into consumer LLM platforms. Only use enterprise versions with signed BAAs or local solutions for protected health information.
 
@@ -34,13 +34,12 @@ This guide provides a high-level overview of the different LLM platforms you'll 
   - **Shared Projects**: Allows for collaboration where chats, files, and instructions can be shared among a group.
   - **Deep Research**: Can perform thorough investigations across multiple sources and compile organized reports with citations.
 - **Cost Structure**:
-  - **Free**: GPT-4o mini with limited messages (about 10-15 messages per 3 hours)
-  - **Plus**: $20/month - GPT-5, GPT-4o, priority access, 80+ messages per 3 hours
-  - **Team**: $30/month per user (minimum 2 users) - Higher limits, admin controls, shared workspace
-  - **Enterprise**: Custom pricing - HIPAA compliance available, unlimited usage, advanced security
+  - **Free**: Access to the base GPT-5 model with strict message limits that refresh every few hours.
+  - **Plus**: $20/month - Higher message limits for GPT-5, access to GPT-4o, and priority access.
+  - **Team/Pro**: $30/month+ per user - Highest limits, access to specialized models like GPT-5 Thinking, admin controls.
+  - **Enterprise**: Custom pricing - HIPAA compliance available, unlimited usage, advanced security.
 - **Things to Note**:
-  - **Healthcare Warning**: Only Enterprise tier with signed BAA is appropriate for patient data.
-  - **Subscription Tiers (Pro, Team, etc.)**: Paid tiers offer significantly higher usage limits, faster responses, and access to the most powerful models (like GPT-5 Thinking) and advanced features. The free tier has stricter limits and may use less powerful models during peak times.
+  - **Healthcare Warning**: Only the Enterprise tier with a signed BAA is appropriate for patient data.
   - The platform and model lineup evolve very rapidly.
 - **Link**: [chat.openai.com](https://chat.openai.com/)
 
