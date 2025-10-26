@@ -8,11 +8,9 @@ This guide provides a high-level overview of the different LLM platforms you'll 
 
 - **Core Idea**: The "Apple" of LLMs—highly consumer-focused, polished, and designed for intuitive chat-first interaction.
 - **Key Models (as of late 2025)**:
-  - **GPT-4o**: The default, flagship model. Highly capable in text, voice, and vision tasks.
-  - **o4-series (o4-mini, o4-mini-high)**: A newer series focused on providing advanced reasoning capabilities to all users.
-  - **GPT-4.1**: Specialized for coding and handling extremely long contexts (up to 1 million tokens).
-  - **o3-series (o3, o3-pro)**: High-reliability reasoning models for enterprise and critical tasks.
-  - **GPT-3.5**: Legacy model available on the free tier for simpler conversational tasks.
+  - **GPT-5**: The new default model for all users, with more powerful versions like **GPT-5 Thinking** available for paid subscribers.
+  - **GPT-4o**: Reintroduced for paid subscribers after initial removal, remains a powerful multimodal option.
+  - **GPT-4o mini**: A fast and capable model that has replaced the older GPT-3.5 for most standard interface tasks.
 - **Standout Features**:
   - **Data Analysis**: Successor to "Code Interpreter." Upload datasets (CSV, Excel) for cleaning, analysis, and visualization.
   - **Custom GPTs**: Create personalized AI assistants tailored for specific roles or tasks (e.g., a SQL debugger, a marketing copywriter).
@@ -20,8 +18,8 @@ This guide provides a high-level overview of the different LLM platforms you'll 
   - **Shared Projects**: Allows for collaboration where chats, files, and instructions can be shared among a group.
   - **Deep Research**: Can perform thorough investigations across multiple sources and compile organized reports with citations.
 - **Things to Note**:
+  - **Subscription Tiers (Pro, Team, etc.)**: Paid tiers offer significantly higher usage limits, faster responses, and access to the most powerful models (like GPT-5 Thinking) and advanced features. The free tier has stricter limits and may use less powerful models during peak times.
   - The platform and model lineup evolve very rapidly.
-  - Usage limits apply, even for paid "Pro" tiers.
 - **Link**: [chat.openai.com](https://chat.openai.com/)
 
 ---
@@ -41,37 +39,40 @@ This guide provides a high-level overview of the different LLM platforms you'll 
   - **Automatic Memory & Personalization**: Retains project details, user preferences, and past interactions to provide tailored assistance.
   - **Massive Context Window**: Can process up to 200,000 tokens, making it ideal for analyzing large codebases or lengthy documents.
 - **Things to Note**:
+  - **Subscription Tiers (Pro)**: The free version has strict message limits that reset every few hours. The Pro tier offers at least 5x more usage, which is essential for heavy use (e.g., analyzing large documents). This is where costs can add up.
   - Built on a "Constitutional AI" philosophy to be helpful, harmless, and honest.
-  - Can be expensive; it's easy to burn through paid credits with large projects.
 - **Link**: [claude.ai](https://claude.ai/)
 
 ---
 
 ### 3. Google AI Studio (Primary Course Tool)
 
-- **Core Idea**: A free, powerful, and developer-friendly platform that exposes more of the underlying model controls.
-- **Key Models**:
-  - **Gemini 1.5 Pro**: The primary model for this course; powerful, with excellent reasoning and a large context window.
-  - **Gemini 1.5 Flash**: A faster, lighter version for less complex tasks.
+- **Core Idea**: A free, powerful, and developer-friendly platform that exposes more of the underlying model controls and is designed for a fast path from prompt to production.
+- **Key Models (as of late 2025)**:
+  - **Gemini 2.5 Pro**: The primary model for this course; powerful, with excellent reasoning and a large context window.
+  - **Gemini 2.5 Flash**: An updated, faster, lighter option optimized for speed and efficiency.
 - **Standout Features**:
+  - **One-click Cloud Run publishing**: Easily deploy AI applications directly from the studio.
+  - **Google Maps Grounding**: Allows the model to integrate live, real-world data from Google Maps into its responses.
+  - **Playground Overhaul**: Features a unified UI and a "Compare Mode" for testing models side-by-side.
   - **Parameter Control**: Easily adjust `Temperature`, `Top-P`, `Top-K`, and `Max output tokens` to see how they affect model output.
-  - **Grounding**: Can connect to Google Search to ground its responses in real-time web data.
-  - **Structured Outputs**: Tools to force the model to generate output in specific formats like JSON.
 - **Things to Note**:
-  - The interface is organized by "prompts" rather than a single continuous chat, which encourages experimentation.
+  - The interface is organized by "prompts" but has been revamped to better support building and deploying full applications.
 - **Link**: [aistudio.google.com](https://aistudio.google.com/)
 
 ---
 
 ### 4. Grok (from xAI)
 
-- **Core Idea**: An LLM with a distinct, often humorous personality, integrated directly with real-time data from X (formerly Twitter).
+- **Core Idea**: An LLM with a distinct, often humorous personality, integrated directly with real-time data from the X platform.
+- **Key Models (as of late 2025)**:
+  - **Grok 4**: The flagship model, with variants like **Grok 4 Heavy** for complex reasoning and **Grok 4 Fast** for speed.
 - **Standout Features**:
   - **Real-Time X Data**: Can provide summaries and insights based on current conversations happening on X.
-  - **Unique Personality**: Designed to be more conversational and less filtered than other models.
-  - **"Fun Mode" vs. "Regular Mode"**: Can switch between a more witty or a more straightforward personality.
+  - **Text-to-Video Generation**: Can generate short videos (6-15 seconds) with synchronized audio from text prompts.
+  - **Customizable AI Companions**: Offers a range of AI personalities that users can interact with.
 - **Things to Note**:
-  - Requires a premium X subscription to access.
+  - Requires a premium X subscription to access. Its personality can be more "spicy" or unfiltered than other models.
 - **Link**: [grok.x.ai](https://grok.x.ai/)
 
 ---
