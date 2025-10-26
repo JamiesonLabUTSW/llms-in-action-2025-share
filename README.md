@@ -123,13 +123,13 @@ By the end of this course, participants will be able to:
 - **10:30 AM - 10:45 AM: Break**
 
 - **10:45 AM - 11:15 AM: Hands-On Lab 1 – Getting Started with LLMs - "Hello World" [Andrew]**
-  - Tour of top consumer-grade platforms ([ChatGPT](https://chat.openai.com/), [Claude](https://claude.ai/), [Grok](https://grok.x.ai/), [Google AI Studio](https://aistudio.google.com/), [Copilot](https://copilot.microsoft.com/)).
-  - Use of CLI tools ([claude code](https://claude.ai/), [gemini cli](https://github.com/google/gemini-cli))
-  - Tour of code editors ([Cursor](https://cursor.sh/))
-  - Use of local models with [LM Studio](https://lmstudio.ai/)
-  - Account setup and basic interface orientation.
+  - Tour of top consumer-grade platforms ([ChatGPT](https://chat.openai.com/), [Claude](https://claude.ai/), [Grok](https://grok.x.ai/), [Microsoft Copilot](https://copilot.microsoft.com/)).
+  - Introduction to specialized tools like [NotebookLM](https://notebooklm.google.com/) for research.
+  - Overview of local models with [LM Studio](https://lmstudio.ai/) for privacy.
+  - Tour of developer tools like code editors ([Cursor](https://cursor.sh/)) and CLIs ([Claude Code](https://claude.ai/code), [Gemini CLI](https://github.com/google/gemini-cli)).
+  - Account setup and basic interface orientation for Google AI Studio.
   - First prompts and observations of variability.
-  - Introduction to Google AI Studio as primary course platform.
+  - Introduction to [Google AI Studio](https://aistudio.google.com/) as the primary course platform.
 
 - **11:15 AM - 12:00 PM: Lecture 2a/Demo – Prompt Engineering Basics (Part 1) [Ameer]**
   - Crafting effective prompts: clarity, context, specificity.
