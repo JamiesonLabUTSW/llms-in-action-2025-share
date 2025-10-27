@@ -15,13 +15,15 @@
 ### Set-up
 
 1. Navigate to [Google AI Studio](https://aistudio.google.com).
-2. Select "Gemini 1.5 Pro" under **Model**.
-3. Ensure **Code Execution** and **Grounding with Google Search** are OFF.
-4. Use the following **System Prompt**:
+2. On the left-hand side, click the "Chat" button.
+3. On the right-hand side near the top, make sure "Gemini 2.5 Pro" is selected.
+4. Make sure that **Code Execution** is turned off.
+5. Make sure that "Grounding with Google Search" is turned off (It is on by default).
+6. Just under the model on the right-hand side, click the **System Prompt** and use the following:
 
 ```markdown
 ## Instructions
-You are a medical assistant that helps support physicians perform various medical calcuations.
+You are a medical assistant that helps support physicians perform various medical calculations.
 
 You will be provided with a patient's clinical data and a query that asks for a calculation to be performed.
 
@@ -32,9 +34,9 @@ You will be provided with a patient's clinical data and a query that asks for a 
 * If you do not have all of the necessary information, you should immediately request missing elements from the user.
 
 ## Response Format
-Any calculations or you perform should be presented first but enclosed within <calculation></calculation> tags.
+Any calculations you perform should be presented first but enclosed within <calculation></calculation> tags.
 
-Your final answer will be presented last as only once sentence on a line by itself in the format of:
+Your final answer will be presented last as only one sentence on a line by itself in the format of:
 "The patient's [name of risk score] is [result]."
 ```
 
@@ -43,6 +45,10 @@ Your final answer will be presented last as only once sentence on a line by itse
 ```markdown
 Calculate the 10-year ASCVD risk for a 55-year-old White male, current smoker, total cholesterol 230 mg/dL, HDL 50 mg/dL, LDL 140 mg/dL, untreated systolic blood pressure 140 mmHg, diastolic blood pressure 90 mmHg, no diabetes, not on hypertension treatment, not on a statin, and not on aspirin therapy.
 ```
+
+### Calculation: DOUBLE-CHECK IT
+
+Fill in the calculator located here for this patient to double check the model's outputs: [https://tools.acc.org/ASCVD-Risk-Estimator-Plus/#!/calculate/estimate/](https://tools.acc.org/ASCVD-Risk-Estimator-Plus/#!/calculate/estimate/)
 
 ### Observations
 
@@ -57,9 +63,11 @@ Calculate the 10-year ASCVD risk for a 55-year-old White male, current smoker, t
 ### Set-up
 
 1. Navigate to [Google AI Studio](https://aistudio.google.com).
-2. Select "Gemini 1.5 Pro" under **Model**.
-3. Ensure **Code Execution** and **Grounding with Google Search** are OFF.
-4. Use the following **System Prompt**:
+2. On the left-hand side, click the "Chat" button.
+3. On the right-hand side near the top, make sure "Gemini 2.5 Pro" is selected.
+4. Make sure that **Code Execution** is turned off.
+5. Make sure that "Grounding with Google Search" is turned off (It is on by default).
+6. Just under the model on the right-hand side, click the **System Prompt** and use the following:
 
 ```markdown
 ## Instructions
@@ -98,12 +106,13 @@ You have access to a structured JSON API that performs the calculation if provid
 Use the same scenario, adding the following:
 
 ```markdown
-Calculate the 10-year ASCVD risk for a 55-year-old White male, current smoker, total cholesterol 230 mg/dL, HDL 50 mg/dL, LDL 140 mg/dL, untreated systolic blood pressure 140 mmHg, diastolic blood pressure 90 mmHg, no diabetes, not on hypertension treatment, not on a statin, and not on aspirin therapy.
+Calculate the 10-year ASCVD risk for a 55-year-old White male, current smoker, total cholesterol 230 mg/dL, HDL 50 mg/dL, LDL 140 mg/dL, untreated  blood pressure 140 / 90, no diabetes, not on hypertension treatment, not on a statin, and not on aspirin therapy.
 ```
 
-### Calculation
+### Calculation: DOUBLE-CHECK IT
 
-Use the extracted fields from the API call to manually fill-in the calculator located here: [https://tools.acc.org/ASCVD-Risk-Estimator-Plus/#!/calculate/estimate/](https://tools.acc.org/ASCVD-Risk-Estimator-Plus/#!/calculate/estimate/)
+Double check the extracted values and fill in the calculator located here for this patient to double check the model's outputs: [https://tools.acc.org/ASCVD-Risk-Estimator-Plus/#!/calculate/estimate/](https://tools.acc.org/ASCVD-Risk-Estimator-Plus/#!/calculate/estimate/) to see if any extraction errors caused shifts in the risk estimate.
+
 
 ### Observations
 
@@ -119,16 +128,18 @@ Use the extracted fields from the API call to manually fill-in the calculator lo
 ### Set-up
 
 1. Navigate to [Google AI Studio](https://aistudio.google.com).
-2. Select "Gemini 1.5 Pro" under **Model**.
-3. Ensure **Code Execution** and **Grounding with Google Search** are OFF.
-4. Toggle ON the **Function Calling** option.
-5. Next to **Function Calling**, click **Edit**.
-6. In the pop-up, enter in the following function call schemas:
+2. On the left-hand side, click the "Chat" button.
+3. On the right-hand side near the top, make sure "Gemini 2.5 Pro" is selected.
+4. Make sure that **Code Execution** is turned off.
+5. Make sure that "Grounding with Google Search" is turned off (It is on by default).
+6. Toggle on the **Function Calling** option.
+7. Next to **Function Calling**, click **Edit**.
+8. In the pop-up, enter the following function call schemas:
 
 ```json
 [
     {
-        "name": "ascdv_calculation",
+        "name": "ascvd_calculation",
         "description": "Calculates the 10-year ASCVD risk for a patient based on their clinical data.",
         "parameters": {
             "type": "object",
@@ -248,7 +259,7 @@ You have access to a set of calculators that perform the risk calculations if pr
 * Your responses should be factually correct and rely on the appropriate calculator.
 * Your response should include the calculator used and the result.
 * Ensure that the response is clear and easy to understand.
-* Do not interpolate between the calculator and the result.
+* Do not add text between the calculator output and the final result sentence.
 * If you do not have all of the necessary information, you should immediately request missing elements from the user.
 
 ## Response Format
@@ -316,9 +327,11 @@ Reflect on which errors are caught, the clarity of the model’s error messages,
 ### Set-up
 
 1. Navigate to [Google AI Studio](https://aistudio.google.com).
-2. Select "Gemini 1.5 Pro" under **Model**.
-3. Toggle ON the **Code Execution** option.
-4. Use the following **System Prompt**:
+2. On the left-hand side, click the "Chat" button.
+3. On the right-hand side near the top, make sure "Gemini 2.5 Pro" is selected.
+4. Make sure that "Grounding with Google Search" is turned off (It is on by default).
+5. Toggle on the **Code Execution** option.
+6. Just under the model on the right-hand side, click the **System Prompt** and use the following:
 
 ```markdown
 ## Instructions
@@ -331,13 +344,13 @@ When given patient data and a description of a calculation, you must:
 
 ## Guidelines
 * Responses must include commented Python code demonstrating exactly how the calculation was performed.
-* After execution, state clearly the calculated result
+* After execution, state clearly the calculated result.
 * Your responses should be factually correct and based on the calculations.
 * If you do not have all of the necessary information, you should immediately request missing elements from the user.
 
 ## Response Format
 
-Your final answer will be presented last as only once sentence on a line by itself in the format of:
+Your final answer will be presented last as only one sentence on a line by itself in the format of:
 "The patient's [name of risk score] is [result]."
 
 ## Supporting Tables
