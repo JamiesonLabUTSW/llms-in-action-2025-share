@@ -1,6 +1,6 @@
 # RAG - Exercises #1
 
-**Task**: Use an LLM to prepare patient education document on the latest treatment guidelines for Alzheimer's disease.
+**Task**: Use an LLM to prepare a patient education document on the latest treatment guidelines for hypertension.
 
 ## Why RAG helps here?
 
@@ -13,12 +13,14 @@
 ### Set-up
 
 1. Navigate to [Google AI Studio](https://aistudio.google.com)
-2. On the right-hand side, select "Gemini 1.5 Pro" under **Model**
-3. Use the following **System Prompt**:
+2. On the left-hand side, click the "Chat" button.
+3. On the right-hand side near the top, make sure "Gemini 2.5 Pro" is selected.
+4. Make sure that "Grounding with Google Search" is turned off (It is on by default).
+5. Just under the model on the right-hand side, click the **System Prompt** and use the following:
 
 ```markdown
 ## Instructions
-You are a medical assistant that helps write thorough patient education documents documents that are provided to patients and their families after a diagnosis or in advance of a treatment or procedure.
+You are a medical assistant that helps write thorough patient education documents that are provided to patients and their families after a diagnosis or in advance of a treatment or procedure.
 
 You will be tasked with writing a one-page patient education document in response to the user's query. Make sure to include any data around (1) symptoms, (2) treatment options, (3) complications or side effects, and (4) any other relevant information.
 
@@ -31,10 +33,10 @@ You will be tasked with writing a one-page patient education document in respons
 
 ### User Query
 
-Now, use the following as the the initial query. Submit the request after adding.
+Now, use the following as the initial query. Submit the request after adding.
 
 ```markdown
-What are the latest treatment guidelines for Alzheimer's disease?
+What are the latest treatment guidelines for hypertension?
 ```
 
 ### Observations
@@ -45,28 +47,27 @@ What are the latest treatment guidelines for Alzheimer's disease?
 
 
 ### Extensions
-#### 1. Compare Model Ouputs
-In the top-right corner, click on **Compare**. Compare the responses from the three different models.
+#### 1. Compare Model Outputs
+In the toolbar, click on **Compare mode** button. Compare the responses from the three different models.
 
 **Suggested Models**:
-1. **Gemini 2.5 Pro Experimental 03-25** A more recent model
-2. **LearnLM 1.5 Pro Experimental** An education focused language model
-3. **Gemma 3 1B** A recent, small, open-weights language model
+1. **Gemini 2.5 Flash Latest** A more recent, lightweight model
+2. **Gemma 3 1B** A recent, small, open-weights language model
 
 #### 2. Resample with different generation parameters
 Resample the response with different generation parameters. Try using `Temperature` between 0 and 1. Try using `Top P` between 0.2 and 1.
 
 ## Approach 2: Add Manually Updated Context
 
-### Set-up
-
 1. Navigate to [Google AI Studio](https://aistudio.google.com)
-2. On the right-hand side, select "Gemini 1.5 Pro" under **Model**
-3. Use the following **System Prompt**:
+2. On the left-hand side, click the "Chat" button.
+3. On the right-hand side near the top, make sure "Gemini 2.5 Pro" is selected.
+4. Make sure that "Grounding with Google Search" is turned off (It is on by default).
+5. Just under the model on the right-hand side, click the **System Prompt** and use the following:
 
 ```markdown
 ## Instructions
-You are a medical assistant that helps write thorough patient education documents documents that are provided to patients and their families after a diagnosis or in advance of a treatment or procedure.
+You are a medical assistant that helps write thorough patient education documents that are provided to patients and their families after a diagnosis or in advance of a treatment or procedure.
 
 You will be tasked with writing a one-page patient education document in response to the user's query. Make sure to include any data around (1) symptoms, (2) treatment options, (3) complications or side effects, and (4) any other relevant information.
 
@@ -82,42 +83,35 @@ The user will also provide a helpful context document that is targeted to a prof
 
 ### User Query
 
-Now, use the following as the the initial query. Do not submit yet.
+Now, use the following as the initial query. Do not submit yet.
 
 ```markdown
- What are the latest treatment guidelines for Alzheimer's disease?
-
-<context>
-REPLACE ME
-</context>
+ What are the latest treatment guidelines for hypertension?
  ```
 
-Next, navigate to a reputable, up-to-date source of information on Alzheimer's disease treatment guidelines. One example is the National Institute on Aging (NIA) web article on [Alzheimer's disease treatment guidelines](https://www.nia.nih.gov/health/alzheimers-treatment/how-alzheimers-disease-treated).
+Next, navigate to a reputable, up-to-date source of information on hypertension treatment guidelines. One example is the AHA's [A Guideline for the Prevention, Detection, Evaluation and Management of High Blood Pressure in Adults: A Report of the American College of Cardiology/American Heart Association Joint Committee on Clinical Practice Guidelines](https://www.ahajournals.org/doi/pdf/10.1161/CIR.0000000000001356).
 
-Once the page has loaded, copy the web page and paste it into the user query we started in the last step in between the `<context>` tags (specifically, where the "REPLACE ME" text is) (Ctrl+A, Ctrl+C, navigate to the user query, Ctrl+V)
+Once the page has loaded, download the PDF file to your desktop and when the file download has completed, upload it to the context by clicking the (+) button to the right of the "Run" button.
 
 ### Observations
+
 * Does the response achieve the goals for readability and clarity?
 * Does the response reflect the latest treatment guidance?
 * What impact does the context have on the response?
 * What did adding context do to the token count and response time?
 
-
 ### Extensions
 
 #### 1. Other Sources
-Find another reputable source of information on Alzheimer's disease treatment guidelines and replace the content between the `<context>` tags.
+Find another reputable source of information on hypertension management guidelines and add the context as a file upload or paste it into the request.
 
-#### 2. Multiple Sources
-Find another reputable source of information on Alzheimer's disease treatment guidelines and add it to the context inside a second pair of `<context>` tags.
-
-#### 3. Bad Sources
-Either find a blatantly incorrect source of information on Alzheimer's disease treatment guidelines and add it to the context inside a second pair of `<context>` tags, or write-up completely false information.
+#### 2. Bad Sources
+Find a blatantly incorrect source of information on hypertension treatment guidelines and add it to the context as a file upload or within the request.
 
 Also, test the responses using the bad source as the *only* context. Compare the responses.
 
-#### 4. Unrelated Context
-Navigate to a web page that is not related to Alzheimer's disease treatment guidelines and paste it in between the `<context>` tags.
+#### 3. Unrelated Context
+Navigate to a web page that is not related to hypertension treatment guidelines and paste it in the request as well.
 
 One suggestion: [Which ‘Sex and the City’ character are you, really? Kristin Davis’ guide to figuring it out](https://www.today.com/popculture/tv/which-sex-and-the-city-character-are-you-quiz-rcna199315)
 
@@ -126,19 +120,20 @@ One suggestion: [Which ‘Sex and the City’ character are you, really? Kristin
 ### Set-up
 
 1. Navigate to [Google AI Studio](https://aistudio.google.com)
-2. On the right-hand side, select "Gemini 1.5 Pro" under **Model**
-3. On the right-hand side, toggle the **Grounding with Google Search** option. Acknowledge the warning.
-4. Use the following **System Prompt**:
+2. On the left-hand side, click the "Chat" button.
+3. On the right-hand side near the top, make sure "Gemini 2.5 Pro" is selected.
+4. Make sure that "Grounding with Google Search" is turned ON for this round.
+5. Just under the model on the right-hand side, click the **System Prompt** and use the following:
 
 ```markdown
  ## Instructions
-You are a medical assistant that helps write thorough patient education documents documents that are provided to patients and their families after a diagnosis or in advance of a treatment or procedure.
+You are a medical assistant that helps write thorough patient education documents that are provided to patients and their families after a diagnosis or in advance of a treatment or procedure.
 
  You will be tasked with writing a one-page patient education document in response to the user's query. Make sure to include any data around (1) symptoms, (2) treatment options, (3) complications or side effects, and (4) any other relevant information.
 
  You will have the ability to search the web for up-to-date information on the topic. Please use this ability to help inform your response.
  
- To improve transparency and trust, please include a list of the sources you used in your response. Number each source at the end of the document and provide the URL. In the body of the document, use the references number from the citation list at the end to refer to the source.
+To improve transparency and trust, please include a list of the sources you used in your response. Number each source at the end of the document and provide the URL. In the body of the document, use the reference numbers from the citation list at the end to refer to the source.
 
  ## Guidelines
  * Your responses should target an eighth-grade reading level.
@@ -151,7 +146,7 @@ You are a medical assistant that helps write thorough patient education document
 ### User Query
 
 ```markdown
-What are the latest treatment guidelines for Alzheimer's disease?
+What are the latest treatment guidelines for hypertension?
 ```
 
 ### Observations
@@ -164,7 +159,7 @@ What are the latest treatment guidelines for Alzheimer's disease?
 
 ### Extensions
 
-#### 1. Compare Model Ouputs
+#### 1. Compare Model Outputs
 In the top-right corner, click on **Compare**. Compare the responses from the three different models.
 
 **Suggested Models**:
